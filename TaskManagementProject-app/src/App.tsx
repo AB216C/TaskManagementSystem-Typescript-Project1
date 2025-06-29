@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <div className="taskApp">
       <Header />
       <Routes>
-        <Route path="/" element={<h1>Welcome to Task App</h1>} />
+        <Route path="/" element={<h1>Welcome to Task Management App</h1>} />
         <Route
           path="/dashboard"
           element={

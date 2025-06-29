@@ -13,6 +13,7 @@ const TaskDetails: React.FC = () => {
 
   return (
     <div className="taskdetails">
+       <h2>{task.id}</h2>
       <h2>{task.title}</h2>
       <p>{task.description}</p>
       <p>Status: {task.completed ? '✅ Completed' : '❌ Not completed'}</p>
