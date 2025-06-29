@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 500px;
+  max-width: 700px;
   margin: 2rem auto;
   padding: 1.5rem;
   border: 1px solid #ccc;
@@ -90,6 +90,7 @@
 
 div button:hover {
    background-color: #005fd1;
+   transition:background-color 0.8s ease;
 }
 
 .taskdetails {
@@ -105,15 +106,20 @@ div button:hover {
 
 
 .taskApp{
-  /* display: flex;
-  flex-direction: column; */
-  /* gap: 2rem; */
+  display: flex;
+  flex-direction: column;
   max-width: 650px;
   min-height:850px;
   margin: 2rem auto;
   padding: 2.5rem;
-  border: 2px solid #242323;
-  /* border-radius: 8px; */
-  background-color: #5e5757;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #242323;
+  background-color: #aba2a2;
+  padding-top:10%;
+  font-size:40px;
+
+}
+
+.logout {
+  display: flex;
+  flex-direction: column;
 }

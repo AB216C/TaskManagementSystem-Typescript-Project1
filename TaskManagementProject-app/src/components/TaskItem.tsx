@@ -11,9 +11,12 @@ const TaskItem: React.FC<{ task: Task }> = ({ task }) => {
       <h3>{task.title}</h3>
       <p>{task.description}</p>
       <p>Status: {task.completed ? '✅' : '❌'}</p>
-      <Link to={`/task/${task.id}`}>View</Link> |{' '}
-      <Link to={`/edit/${task.id}`}>Edit</Link> |{' '}
-      <button onClick={() => deleteTask(task.id)}>Delete</button>
+      <div>
+        <Link to={`/task/${task.id}`}>View</Link> |{' '}
+        <Link to={`/edit/${task.id}`}>Edit</Link> |{' '}
+        <button onClick={() => deleteTask(task.id)} style={{color:'red'}}>Delete</button>
+      </div>
+
     </div>
   );
 };

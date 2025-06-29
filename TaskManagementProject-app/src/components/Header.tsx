@@ -6,16 +6,20 @@ const Header: React.FC = () => {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
 
   return (
-    <div style={{ marginBottom: 20, padding:'50px', backgroundColor: 'black'}}>
+    <div style={{ marginBottom: "5%",padding:'80px', backgroundColor: 'black', fontWeight:'bolder', color:'white'}}>
       {isAuthenticated ? (
-        <>
-          <span>Welcome, {user?.name}</span>
-          <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} style={{ padding:'10px', fontSize:'50px', fontWeight:'bolder'}}>
+        <div className="logout" >
+          <div>
+             <span style={{ padding:'20px', fontSize:'40px', fontWeight:'bold'}}>Welcome, {user?.name}</span>
+          </div>
+          <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} style={{ padding:'30px', fontSize:'50px', fontWeight:'bolder'}}>
             Logout
           </button>
-        </>
+        </div>
       ) : (
-        <button onClick={() => loginWithRedirect()} style={{ padding:'10px', fontSize:'50px', fontWeight:'bolder'}} >Login</button>
+        <button onClick={() => loginWithRedirect()} style={{ padding:'10px', fontSize:'50px', fontWeight:'bolder'}} >
+          Login
+        </button>
       )}
     </div>
   );
