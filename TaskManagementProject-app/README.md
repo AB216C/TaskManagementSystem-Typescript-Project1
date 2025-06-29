@@ -1,7 +1,6 @@
 ** TASK MANAGEMENT PROJECT-TYPESCRIPT AND REACT **
 
 # Project SET UP
-
 The project is made of 5 important folders namely auth, components, pages, types, context, and plus a file called ".env", main.tsx, and App.tsx.
 
 Each folder has files that play a unique role in the application. The Auth folder contains a file that is specifically designed to provide authentication for the "App" file. Before the app renders anything on the user interface it has to be authenticated.
@@ -19,7 +18,6 @@ main.tsx play a big role because App is wrapped in <Auth0ProviderWithHistory>App
 App.tsx was used as the entry point of the application. This is where the users land once they are successfully authenticated and they are able to manage their daily or weekly tasks.
 
 # Project installations
-
 ## INSTALLED DEPENDENCIES for the application 
 npm install react-router-dom uuid
 npm install --save-dev @types/react-router-dom @types/uuid
@@ -29,10 +27,9 @@ uuidV4: Generete Universally Unique Identifier while creating tasks. And it is a
 ## INSTALLED AuthO React SDK 
 npm install @auth0/auth0-react
 # Project usage
-The main goal of this project is to provide an interactive user interface in which users can freely Manage tasks using their mobile phones, tablets, and computers. This application allows the users to add an infinite number of tasks, update them when necessary, and provide completed and non-completed status to any of them to boost productivity.
+The main goal of this project is to provide an interactive user interface in which users can freely Manage tasks using their mobile phones, tablets, and computers. This application allows the users to add an infinite number of tasks, update them when necessary, and provide completed and non-completed status to any of them, and delete completed or uncessary one to boost daily focus and productivity.
 
 # Documentations
-
 https://www.w3schools.com/typescript/
 https://www.typescriptlang.org/docs/handbook/advanced-types.html
 https://developer.auth0.com/resources/guides/spa/react/basic-authentication
